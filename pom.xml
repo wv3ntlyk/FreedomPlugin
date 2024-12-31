@@ -29,8 +29,10 @@
                     <execution>
                         <id>compile</id>
                         <phase>compile</phase>
+
                         <goals>
                             <goal>compile</goal>
+
                         </goals>
                     </execution>
                 </executions>
@@ -83,5 +85,6 @@
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
+
     </dependencies>
 </project>

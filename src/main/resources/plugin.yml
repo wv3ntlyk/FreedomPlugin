@@ -4,3 +4,7 @@ main: me.wv3ntly.freedomPlugin.FreedomPlugin
 api-version: '1.21'
 authors: [ wV3ntly ]
 description: Adds automatical and fully configurable border changing to the server.
+commands:
+  freedom:
+    description: Execute debug actions or restore plugin settings
+    usage: /freedom [debug|restore]

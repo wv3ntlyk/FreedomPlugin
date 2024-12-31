@@ -1,23 +1,101 @@
+---
 
-![DALL·E 2024-12-28 20 25 19 - A Minecraft isometric-style logo for a plugin showing a glowing blue border surrounding a lush green terrain with trees and small mountains  The borde-min](https://github.com/user-attachments/assets/434bc45e-55c6-477a-b39b-3f25d53113b6)
+![Plugin Logo](https://github.com/user-attachments/assets/434bc45e-55c6-477a-b39b-3f25d53113b6)
 
-***FreedomPlugin*** is a lightweight Minecraft plugin that allows you to control the world border with ease. It includes a dynamic feature to automatically expand the world border after a configurable amount of time, encouraging exploration and adventure.
+---
 
-**Freedom Plugin - Dynamic World Border Management**
-Freedom Plugin introduces dynamic world border functionality for Minecraft servers, elevating the gameplay experience by ensuring fairness and balance among players. It allows server administrators to customize the world border's behavior, including automatic periodic expansion, transition effects, and notifications for players.
-The plugin is perfect for servers that make use of datapacks or custom world generation mechanics, providing a balanced and adjustable game field for all players, limiting the advantage of looting far-away structures while others focus on mining or exploring locally.
-Key Features:
-- Fully configurable world border via `config.yml`.
-- Automatic world border expansion based on server days.
-- Configurable wait time, border size increments, and maximum size.
-- Smooth animations for border changes with transition effects.
-- Player notifications for transparency.
-- Administrative commands to debug, restore defaults, or manually trigger updates.
-- Simple `/freedom` command for managing the plugin.
+# **Freedom Plugin - Dynamic World Border Management *1.21.X* **
 
-Use Freedom Plugin to bring a flexible and fair way of managing player exploration in custom world setups or multiplayer scenarios!
-### Usage Context:
-This plugin was designed with servers in mind, particularly those that utilize datapacks that alter world generation or add structures. In these setups, having an expanding world border ensures that:
-- All players progress fairly, with equal access to structures and resources as the border grows.
-- Players aren't able to gain a significant advantage by looting far-off structures before others have the chance to explore.
-- Gameplay remains balanced and interesting for all participants, enhancing the experience even in competitive or cooperative server settings.
+**Freedom Plugin** introduces dynamic world border functionality for Minecraft *1.21.X* servers, enhancing the gameplay experience by promoting fairness and balance among players. This plugin allows server administrators to customize the world border's behavior, including features like periodic expansion, smooth transitions, and player notifications.
+
+Perfect for servers using datapacks or custom world generation mechanics, the plugin ensures a balanced game field, limiting the advantage of looting distant structures while encouraging local mining and exploration.
+
+⚠️ **Note**: This project is currently in **Beta**. Features and functionality may change, and bugs might occur. Please report any issues via [GitHub Issues](https://github.com/wv3ntlyk/FreedomPlugin/issues).
+
+---
+
+## **Key Features**
+- 🎛️ **Fully Configurable**: Manage the plugin easily via `config.yml`.
+- ⏳ **Automatic Expansion**: Expand the border automatically based on in-game server days.
+- 🔧 **Customizable Settings**:
+  - Configure wait time between expansions.
+  - Adjust border size increments and maximum size.
+- 🌐 **Smooth Transitions**: Seamless animations for border changes with visual effects.
+- 🔔 **Player Notifications**: Notify players about border updates for transparency.
+- ⚙️ **Administrative Commands**:
+  - Debug or restore default settings.
+  - Manually trigger border updates.
+- 🛠️ **Simple Commands**: Use `/freedom` to manage and configure the plugin.
+
+---
+
+## **Why Use Freedom Plugin?**
+This plugin is designed for servers with custom or enhanced gameplay mechanics, such as:
+- **Datapacks with Custom World Generation**: Expanding borders ensure equal access to structures and resources for all players.
+- **Balanced Multiplayer Gameplay**: Prevent players from gaining an unfair advantage by reaching far-off structures early.
+- **Dynamic Exploration**: Keep the gameplay fresh and exciting with periodic border expansions.
+
+---
+
+## **Usage Instructions**
+1. **Install the Plugin**:
+   - Download the latest version of the plugin from the [Releases](#) page.
+   - Place the JAR file in your server's `plugins` folder.
+2. **Configure Settings**:
+   - Open the `config.yml` file generated in the `FreedomPlugin` folder.
+   - Adjust settings like initial border size, increment values, expansion frequency, and transition effects.
+3. **Start Your Server**:
+   - The plugin will automatically apply the world border configuration upon startup.
+4. **Manage with Commands**:
+   - `/freedom`: Access the main command for managing the plugin.
+   - Additional administrative commands are available for debugging and manual updates.
+
+---
+
+## **Commands and Permissions**
+| Command                   | Description                                | Permission             |
+|---------------------------|--------------------------------------------|------------------------|
+| `/freedom`                | Opens the main management menu.            | `freedom.manage`       |
+| `/freedom debug`          | Sends debug message in chat.               | `freedom.admin`        |
+| `/freedom restore`        | Restores default settings.                 | `freedom.admin`        |
+
+---
+
+## **Configuration Example**
+Here's a sample `config.yml` file:
+
+```yaml
+# Freedom Plugin Configuration
+world: "world"
+border:
+  initialSize: 128        # Initial size of the world border
+  increment: 128          # Size increment per cycle
+  maxDays: 300            # Maximum number of days during which the border will expand
+  maxSize: 29999984       # Maximum size of the world border(server default: 29999984)
+  transitionTime: 120     # Animation time for border expansion (in seconds)
+  waitTime: 10            # Days to wait between border expansions
+  centerX: 0.0            # X-coordinate of the border center
+  centerZ: 0.0            # Z-coordinate of the border center
+  autoExpand: true        # Should the borders expand automatically (Turns On/Off the plugin)
+  notifyPlayers: true     # Should players be notified about border updates
+  logUpdates: true        # Should changes to the border be logged to the console
+```
+
+---
+
+## **Benefits for Server Gameplay**
+- **Equal Opportunity**: All players gain fair access to resources and structures as the border expands.
+- **Enhanced Experience**: Dynamic borders keep the game engaging, even in long-term server setups.
+- **Balanced Progression**: Ensures a level playing field in competitive or cooperative multiplayer scenarios.
+
+---
+
+## **Contribute**
+Feel free to contribute to this project! Open an issue or submit a pull request if you have ideas or bug reports.
+
+---
+
+## **License**
+This plugin is licensed under the [MIT License](LICENSE). Use it freely in your projects!
+
+---

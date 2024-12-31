@@ -4,7 +4,7 @@
 
 ---
 
-# **Freedom Plugin - Dynamic World Border Management *1.21.X* **
+# **Freedom Plugin - Dynamic World Border Management 1.21.X**
 
 **Freedom Plugin** introduces dynamic world border functionality for Minecraft *1.21.X* servers, enhancing the gameplay experience by promoting fairness and balance among players. This plugin allows server administrators to customize the world border's behavior, including features like periodic expansion, smooth transitions, and player notifications.
 

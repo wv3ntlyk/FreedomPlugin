@@ -1,5 +1,5 @@
 name: FreedomPlugin
-version: '0.1-Stable'
+version: '0.1.1b'
 main: me.wv3ntly.freedomPlugin.FreedomPlugin
 api-version: '1.21'
 authors: [ wV3ntly ]

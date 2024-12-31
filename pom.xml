@@ -6,7 +6,7 @@
 
     <groupId>me.wv3ntly</groupId>
     <artifactId>FreedomPlugin</artifactId>
-    <version>0.1-Stable</version>
+    <version>0.1.1b</version>
     <packaging>jar</packaging>
 
     <name>FreedomPlugin</name>

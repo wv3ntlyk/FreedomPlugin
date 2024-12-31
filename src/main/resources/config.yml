@@ -11,4 +11,3 @@ border:
   autoExpand: true        # Should the borders expand automatically(Turns On/Off the plugin)
   notifyPlayers: true     # Should players be notified about border updates
   logUpdates: true        # Should changes to the border be logged to the console
-  # bluemapIntegration: true

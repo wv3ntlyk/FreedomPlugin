@@ -39,7 +39,7 @@ This plugin is designed for servers with custom or enhanced gameplay mechanics, 
 
 ## **Usage Instructions**
 1. **Install the Plugin**:
-   - Download the latest version of the plugin from the [Releases](#) page.
+   - Download the latest version of the plugin from the [Releases](https://github.com/wv3ntlyk/FreedomPlugin/releases) page.
    - Place the JAR file in your server's `plugins` folder.
 2. **Configure Settings**:
    - Open the `config.yml` file generated in the `FreedomPlugin` folder.
